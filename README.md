@@ -9,7 +9,7 @@ This course focuses on the application of regression to inform
 decision-making, particularly using interpretable models to understand
 the effect of interventions on business outcomes. Students learn to
 model experimental and observational data and infer causality instead of
-correlation only.
+correlation only. Prerequisite: DATA 5600
 
 By the end of this course, you will be able to:
 

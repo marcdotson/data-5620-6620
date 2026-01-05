@@ -7,7 +7,7 @@ format: gfm
 - Monday and Wednesday 12:00-1:15 pm
 - Huntsman Hall 370
 
-This course focuses on the application of regression to inform decision-making, particularly using interpretable models to understand the effect of interventions on business outcomes. Students learn to model experimental and observational data and infer causality instead of correlation only.
+This course focuses on the application of regression to inform decision-making, particularly using interpretable models to understand the effect of interventions on business outcomes. Students learn to model experimental and observational data and infer causality instead of correlation only. Prerequisite: DATA 5600
 
 By the end of this course, you will be able to:
 
