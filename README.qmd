@@ -24,9 +24,7 @@ Students can focus on learning by using the following study tips:
 1. Prepare for class by studying assigned material and identifying questions.
 2. Engage during class by asking questions, taking notes, and actively coding.
 3. Apply what you learn in class by working on projects.
-<!-- 3. Apply what you learn in class by completing exercises and working on projects. -->
 4. Evaluate what you're learning by reviewing and reflecting on course materials.
-<!-- 4. Evaluate what you're learning by reviewing and reflecting on course materials and exercise solutions. -->
 5. Reinforce what you're learning by utilizing office hours and working with classmates.
 
 After completing the course, student resumes should reflect the tools, skills, and methods they have learned and showcase the projects they have completed. For example:
@@ -61,7 +59,7 @@ A code editor or integrated development environment (IDE), outside of an open so
 
 Students may use their preferred AI to assist in studying and completing assignments. All students have access to [Copilot](https://copilot.usu.edu/) through Utah State. However, students must remember that the objective of this course is learning. AI can contribute to learning, including helping to debug code and explain concepts in new ways. AI can also be a detriment to learning, including when students use AI to think for them. See the [data stack training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-copilot) for details on getting access to AI and a discussion on using AI responsibly.
 
-## *The Mixtape* and *The Effect*
+## *The Effect*
 
 The course materials include Nick Huntington-Klein's [*The Effect: An Introduction to Research Design and Causality*](https://theeffectbook.net/index.html) (available free online).
 

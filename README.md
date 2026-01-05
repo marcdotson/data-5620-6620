@@ -34,10 +34,8 @@ Students can focus on learning by using the following study tips:
 2.  Engage during class by asking questions, taking notes, and actively
     coding.
 3.  Apply what you learn in class by working on projects.
-    <!-- 3. Apply what you learn in class by completing exercises and working on projects. -->
 4.  Evaluate what you’re learning by reviewing and reflecting on course
     materials.
-    <!-- 4. Evaluate what you're learning by reviewing and reflecting on course materials and exercise solutions. -->
 5.  Reinforce what you’re learning by utilizing office hours and working
     with classmates.
 
@@ -122,7 +120,7 @@ training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-copilo
 for details on getting access to AI and a discussion on using AI
 responsibly.
 
-## *The Mixtape* and *The Effect*
+## *The Effect*
 
 The course materials include Nick Huntington-Klein’s [*The Effect: An
 Introduction to Research Design and
