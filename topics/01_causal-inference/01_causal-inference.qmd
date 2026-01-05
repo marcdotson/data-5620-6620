@@ -1,0 +1,481 @@
+---
+title: "Causal Inference"
+subtitle: "DATA 5620/6620 Advanced Regression for Causal Inference"
+author: Marc Dotson
+title-slide-attributes:
+  data-background-color: "#0F2439"
+format: 
+  revealjs:
+    theme: ../slides.scss  # Modified slides theme
+    code-copy: true        # Show code blocks copy button
+    slide-number: c/t      # Numbered slides current/total
+    embed-resources: true  # Render to a single HTML file
+execute:
+  eval: false
+  echo: true
+  cache: false
+jupyter: python3
+---
+
+## {background-color="#288DC2"}
+
+### Get Started {.permanent-marker-font}
+
+#### Preview
+
+- Make introductions
+- Form groups to work on projects
+- Walk through the course syllabus
+- Provide some context for what we'll be studying
+
+# Introductions
+
+## DATA 5620/6620
+
+This course focuses on the application of regression to inform decision-making, particularly using **interpretable models** to understand the **effect of interventions** on business outcomes. Students learn to model **experimental** and **observational** data and infer causality instead of correlation only. Prerequisite: DATA 5600
+
+By the end of this course, you will be able to:
+
+1. Specify **identification strategies** for estimating causal effects.
+2. Design **effective experiments** and apply appropriate methods for experimental data.
+3. **Model observational data** and infer causality using a variety of techniques.
+
+## 
+
+:::: {.columns .v-center}
+
+::: {.column width="40%"}
+![](../../figures/dotson-family.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+::: {.incremental}
+- Studied journalism, international relations, and statistics
+- Studied international political economy
+- Worked in marketing research
+- Studied quantitative marketing
+- Eight years teaching at BYU
+- Second year teaching at Utah State
+- Rachel teaches high school English
+- Four kids aged 8 to 18
+- Once compared by a student to "a nerdy Spider-Man villain"
+:::
+:::
+
+::::
+
+# What are you studying? What business problems are you interested in? What is your dream job? {background-color="#006242"}
+
+# Study and Success
+
+## 
+
+:::: {.columns .v-center}
+
+::: {.column width="60%"}
+Success in this course is demonstrating conceptual understanding and skill mastery by applying the modeling workflow in your chosen business context and as part of a group
+
+::: {.fragment}
+You are each an essential member of our community of learners; please consider me a teacher and a mentor
+:::
+:::
+
+::: {.column width="40%"}
+![](../../figures/logo_asc.png){fig-align="center"}
+:::
+
+::::
+
+## Focus on learning
+
+1. Prepare for class by studying assigned material and identifying questions
+2. Engage during class by asking questions, taking notes, and actively coding
+3. Apply what you learn in class by working on projects
+4. Evaluate what you're learning by reviewing and reflecting on course materials
+5. Reinforce what you're learning by utilizing office hours and working with classmates
+
+## 
+
+::: {.v-center}
+![](../../figures/example-resume.png){fig-align="center"}
+:::
+
+## 
+
+::: {.v-center}
+![](../../figures/modeling-sequence.png){fig-align="center"}
+:::
+
+# Data Stack
+
+## 
+
+:::: {.columns .v-center}
+
+::: {.column width="60%"}
+::: {.incremental}
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) is a general purpose, open source programming language
+- It is the most commonly used programming language for data analytics
+- See the [data stack training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-python) for details on how to best install and manage Python versions and project environments
+:::
+:::
+
+::: {.column width="40%"}
+![](../../figures/logo_python.png){fig-align="center"}
+:::
+
+::::
+
+## 
+
+:::: {.columns .v-center}
+
+::: {.column width="40%"}
+![](../../figures/logo_positron.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+::: {.incremental}
+- A code editor or integrated development environment (IDE) is a critical data tool
+- I recommend [Positron](https://positron.posit.co), a next-generation data science IDE
+- Positron combines the multilingual extensibility of [VS Code](https://code.visualstudio.com/) with essential data tools common to language-specific IDEs
+- See the [data stack training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-positron) for a summary of Positron's data-friendly features
+:::
+:::
+
+::::
+
+## 
+
+:::: {.columns .v-center}
+
+::: {.column width="60%"}
+::: {.incremental}
+- [GitHub](https://github.com/about) hosts version-controlled project repositories managed with Git
+- It is the industry standard for software development and data projects
+- Using GitHub enables collaboration and the creation of a portfolio of work
+- See the [data stack training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-github) for the basics of using Git and GitHub and a [project template](https://github.com/marcdotson/project-template)
+:::
+:::
+
+::: {.column width="40%"}
+![](../../figures/logo_github.png){fig-align="center"}
+:::
+
+::::
+
+## 
+
+:::: {.columns .v-center}
+
+::: {.column width="40%"}
+![](../../figures/logo_quarto.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+::: {.incremental}
+- [Quarto](https://quarto.org) is an open source publishing system that combines text, code, and output
+- Quarto documents are similar to Jupyter notebooks that can be rendered into a variety of formats
+- Quarto is not required for the course, but you will be required to submit code and output in a PDF format
+- See the [data stack training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-quarto) for more details on Quarto, including how to use Quarto to render a Jupyter notebook into a PDF
+:::
+:::
+
+::::
+
+## 
+
+:::: {.columns .v-center}
+
+::: {.column width="60%"}
+::: {.incremental}
+- You may use your preferred AI to assist in studying and completing assignments, but you have access to [Copilot](https://copilot.usu.edu/)
+- Please remember that the objective of this course is learning
+- AI can contribute to learning, including helping to debug code and explain concepts
+- AI can be a detriment to learning, including when students use AI to think for them
+- See the [data stack training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-copilot) for details on getting access to AI and a discussion on using AI responsibly
+:::
+:::
+
+::: {.column width="40%"}
+![](../../figures/logo_copilot.png){fig-align="center"}
+:::
+
+::::
+
+## 
+
+::: {.v-center}
+![](../../figures/meme_ai-learning.png){fig-align="center"}
+:::
+
+## *The Effect*
+
+::: {.v-center}
+![](../../figures/the-effect.png){fig-align="center"}
+:::
+
+# Assessment
+
+## Goals and deadlines
+
+Assignments are designed to be aligned with what you will be **expected to do in practice**
+
+::: {.incremental}
+- No credit will be given for late work unless an arrangement is made **prior to the relevant deadline**
+- Please review your graded work and ask questions to avoid repeated mistakes
+- Letter grades will follow the standard rubric
+:::
+
+::: {.fragment}
+|    |         |    |        |    |        |
+| :- | :------ | :- | :----- | :- | :----- |
+| A  | 93-100% | B- | 80-82% | D+ | 67-69% |
+| A- | 90-92%  | C+ | 77-79% | D  | 63-66% |
+| B+ | 87-89%  | C  | 73-76% | D- | 60-62% |
+| B  | 83-86%  | C- | 70-72% | E  | 0-59%  |
+:::
+
+## Participation (20%)
+
+This class is all about participation: If you aren't attending, you can't contribute
+
+::: {.incremental}
+- You will take turns preparing slides and presenting to lead the discussion in class
+- When relevant, you should include relevant code when leading the discussion
+:::
+
+## Interviews (30%)
+
+Interviews are an opportunity for you to demonstrate your personal understanding and prepare for future real-world job interviews
+
+::: {.incremental}
+- Designed to complement group project work
+- Includes questions about course concepts, project work (including code), and reflections on your performance in the course
+- Interviews with me will occur at the beginning, middle, and end of the semester during office hours or by appointment
+:::
+
+## Projects (50%)
+
+Projects are the focus of learning by doing in the course, serving as the means for you to apply your conceptual understanding and skill mastery both as a group and within your business domain of interest
+
+::: {.incremental}
+- You will complete two group projects, one focused on experimental data and one focused on observational data
+- Groups will both present and submit a report
+- The week before the presentations, groups will submit a draft of their slides to get feedback and have time for revision
+- The other students in the class, as well as the group members themselves, will help evaluate each of the presentations
+:::
+
+## 
+
+![](../../figures/meme_project-iceberg.png){fig-align="center"}
+
+# Review the syllabus. What questions do you have? What about the course makes you excited or nervous? {background-color="#006242"}
+
+# Regression and Other Stories
+
+## 
+
+::: {.v-center}
+![](../../figures/history_humans.png){fig-align="center"}
+:::
+
+## 
+
+:::: {.columns .v-center}
+
+::: {.column width="40%"}
+![](../../figures/history_galton.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+::: {.incremental}
+- Francis Galton fit a linear model to understand the heredity of human height
+- He noticed that children of tall parents tend to be shorter and children of short parents tend to be taller and called this phenomenon, not the technique, **"regression to the mean"**
+- The term "regression" came to mean fitting a model to data
+- We aren't great at naming things
+:::
+:::
+
+::::
+
+## 
+
+::: {.columns .v-center}
+![](../../figures/history_math.png){fig-align="center"}
+:::
+
+## {visibility="uncounted"}
+
+::: {.columns .v-center}
+![](../../figures/history_stats.png){fig-align="center"}
+:::
+
+## {visibility="uncounted"}
+
+::: {.columns .v-center}
+![](../../figures/history_econ.png){fig-align="center"}
+:::
+
+## {visibility="uncounted"}
+
+::: {.columns .v-center}
+![](../../figures/history_computer-science.png){fig-align="center"}
+:::
+
+## {visibility="uncounted"}
+
+::: {.columns .v-center}
+![](../../figures/history_ai.png){fig-align="center"}
+:::
+
+## {visibility="uncounted"}
+
+::: {.columns .v-center}
+![](../../figures/history_ml.png){fig-align="center"}
+:::
+
+## {visibility="uncounted"}
+
+::: {.columns .v-center}
+![](../../figures/history_all.png){fig-align="center"}
+:::
+
+## Why regression *and* machine learning?
+
+:::: {.columns}
+
+::: {.fragment .column width="33.33%"}
+**Supervised learning**
+
+::: {.incremental}
+- Learn a **mapping function** from inputs to outputs $f: X \rightarrow Y$
+- If the outputs are continuous, this learned mapping function is called **regression**
+- If the outputs are discrete, this learned mapping function is called **classification**
+:::
+:::
+
+::: {.fragment .column width="33.33%"}
+**Unsupervised learning**
+
+::: {.incremental}
+- Learn groups and patterns in data without labeled outputs
+- If we're grouping rows in a dataset, this is called **clustering**
+- If we're grouping columns in a dataset, this is called **dimensionality reduction**
+:::
+:::
+
+::: {.fragment .column width="33.33%"}
+**Reinforcement learning**
+
+::: {.incremental}
+- An agent learns how to interact with its environment through trial and error
+- The agent can take **actions** in its environment
+- It receives **rewards or penalties** based on its actions
+:::
+:::
+
+::::
+
+## Our focus is on *supervised* learning
+
+:::: {.columns .v-center}
+
+::: {.column width="60%"}
+$$
+\Huge{f: X \rightarrow Y}
+$$
+:::
+
+::: {.column width="40%"}
+$X$
+
+- inputs
+- features
+- predictors
+- explanatory variables
+
+$Y$
+
+- output
+- outcome
+- response
+- dependent variable
+:::
+
+::::
+
+## The mapping function is a *model*
+
+We use models to **extract information** from data and inform decisions in the presence of uncertainty
+
+## The mapping function is a *model* {visibility="uncounted"}
+
+We use models to **extract information** from data and inform decisions in the presence of uncertainty
+
+![](../../figures/models_predictive.png){fig-align="center"}
+
+## The mapping function is a *model* {visibility="uncounted"}
+
+We use models to **extract information** from data and inform decisions in the presence of uncertainty
+
+![](../../figures/models_interpretable.png){fig-align="center"}
+
+## The mapping function is a *model* {visibility="uncounted"}
+
+We use models to **extract information** from data and inform decisions in the presence of uncertainty
+
+![](../../figures/models_causal.png){fig-align="center"}
+
+## The mapping function is a *model* {visibility="uncounted"}
+
+We use models to **extract information** from data and inform decisions in the presence of uncertainty
+
+![](../../figures/models_all.png){fig-align="center"}
+
+## 
+
+:::: {.columns .v-center}
+
+::: {.column width="40%"}
+![](../../figures/lse-seal.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
+::: {.incremental}
+- Correlation isn’t causation
+- Lack of correlation isn't lack of causation
+-	A causal (not "casual") model is needed for intervention and counterfactuals
+-	Experimental and observational data
+:::
+:::
+
+::::
+
+<!-- ## {background-color="#006242"}
+
+### Exercise 01 {.lato-font}
+
+1. Take the [course pre-survey](https://usu.instructure.com/courses/783437/quizzes/1377927)
+2. Start setting up your data stack
+3. Read the case and write how you might go about informing the decision (no more than one page)
+4. Include in your response the members of your group
+5. Submit your response as a PDF on Canvas -->
+
+## {background-color="#288DC2"}
+
+### Wrap Up {.permanent-marker-font}
+
+#### Summary
+
+- Introduced the course and each other
+- Formed groups and started thinking about project ideas
+- Walked through the course syllabus and answered questions
+- Provided some context for what we'll be studying this semester
+
+#### For Next Time
+
+- Start setting up your data stack
+- Schedule your first interview with me
+- Read chapters 1 and 2 in *The Effect*
+
