@@ -11,13 +11,12 @@
 .DS_Store
 
 # Folders
-output/*
+assignments/*
 private/*
+/.quarto/
 
 # Files
 *.pdf
-code/src/*
-!code/src/*.R
-!code/src/*.py
-!code/src/*.cpp
-!code/src/*.stan
+*.html
+**/*.quarto_ipynb
+
