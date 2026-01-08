@@ -1,0 +1,9 @@
+# Modeling Workflow
+
+
+- Behind the Scenes (a course trying to find itself)
+- Intervention and Counterfactuals (what if, using the first case)
+- Endogeneity (why the lack of correlation isn’t the lack of causation)
+- Potential Outcomes and the Fundamental Problem of Causal Inference
+  (slides)
+- Identification and Good Research Design (using DAGs)
