@@ -2,8 +2,9 @@
 
 # DATA 5620/6620 Advanced Regression for Causal Inference
 
-- Monday and Wednesday 12:00-1:15 pm
-- Huntsman Hall 370
+- Class: Monday and Wednesday 12:00-1:15 pm, HH 370
+- Office Hours: Tuesdays and Thursdays 3-5 pm, GLLB 204 or
+  [Zoom](https://usu-edu.zoom.us/j/9087876841?pwd=4Nl9sQnSAk3lXfwblJQduriCrzDYok.1)
 
 This course focuses on the application of regression to inform
 decision-making, particularly using interpretable models to understand
@@ -120,12 +121,30 @@ training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-copilo
 for details on getting access to AI and a discussion on using AI
 responsibly.
 
-## *The Effect*
+## Course Materials
 
-The course materials include Nick Huntington-Klein’s [*The Effect: An
+### *The Effect*
+
+We will be studying Nick Huntington-Klein’s [*The Effect: An
 Introduction to Research Design and
 Causality*](https://theeffectbook.net/index.html) (available free
-online).
+online). He also has a [video
+series](https://nickchk.com/theeffectvideos.html) that complements the
+book.
+
+## *Program Evaluation for Public Service*
+
+We will be referencing Andrew Heiss’ [Program Evaluation for Public
+Service](https://evalsp25.classes.andrewheiss.com) course, which also
+includes a [video
+series](https://www.youtube.com/playlist?list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC).
+
+## *Statistical Rethinking*
+
+It may also be helpful to use Richard McElreath’s *Statistical
+Rethinking* [video
+series](https://github.com/rmcelreath/stat_rethinking_2026) as a
+reference when we discuss Bayesian methods.
 
 ## Assessment
 
@@ -144,10 +163,6 @@ follows.
 | A-  | 90-92%  | C+  | 77-79% | D   | 63-66% |
 | B+  | 87-89%  | C   | 73-76% | D-  | 60-62% |
 | B   | 83-86%  | C-  | 70-72% | E   | 0-59%  |
-
-<!-- ### Exercises (20%)
-&#10;Each lecture ends with an exercise designed to help students practice what was covered in class and prepare to apply it to their projects. Each exercise is due before the following class. While students are encouraged to work together, each student is required to submit their own work. Each class begins with a student being called on at random to share their exercise solution. Additionally, for each exercise, every student will be randomly assigned to review one other student’s exercise solution, including rating their work from 1-3 (i.e., "Needs Improvement," "Good," "Excellent").
-&#10;Students won’t get credit for an exercise if they don’t submit their exercise on time, aren’t prepared to share their exercise when called on at random, or don’t complete their randomly assigned exercise review. -->
 
 ### Participation (20%)
 
@@ -181,15 +196,25 @@ slides to get feedback and have time for revision. The other students in
 the class, as well as the group members themselves, will help evaluate
 each of the presentations.
 
-<!-- ## Schedule
-&#10;Please note that the instructor reserves the right to change the following schedule at any time and will provide students sufficient notice as it relates to assignment deadlines.
-&#10;### Week 01
-&#10;- Regression and Machine Learning
+## Schedule
+
+Please note that the instructor reserves the right to change the
+following schedule at any time and will provide students sufficient
+notice as it relates to assignment deadlines.
+
+### Week 01
+
+- Causal Inference
 - Modeling Workflow
-&#10;### Week 02
-&#10;- Decisions and Data
+- Ch. 1-2 of *The Effect*
+
+### Week 02
+
+- Decisions and Data
 - Probability and Statistics
-&#10;### Week 03
+- Ch. 3-4 of *The Effect*
+
+<!-- ### Week 03
 &#10;- Linear Models
 &#10;### Week 04
 &#10;- Diagnostics and Remedies (Part 01)
