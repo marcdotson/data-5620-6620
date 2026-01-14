@@ -1,0 +1,8 @@
+---
+title: "Decisions and Data"
+format: gfm
+---
+
+- Connect decision theory with causality
+- Connect data generating processes with causality
+- First reference to DAGs
