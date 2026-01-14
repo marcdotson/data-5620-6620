@@ -204,19 +204,25 @@ notice as it relates to assignment deadlines.
 
 ### Week 01
 
-- Causal Inference
-- Modeling Workflow
+- Causal Inference (Marc)
+- Modeling Workflow (Marc)
 - Ch. 1-2 of *The Effect*
+- Milestone 01: Brainstorm Project Ideas
 
 ### Week 02
 
-- Decisions and Data
-- Probability and Statistics
+- Decisions and Data (Marc)
+- Probability and Statistics (Marc)
 - Ch. 3-4 of *The Effect*
+- Milestone 02: Narrate a Data Story
 
-<!-- ### Week 03
-&#10;- Linear Models
-&#10;### Week 04
+### Week 03
+
+- Identification and DAGs (?)
+- Ch. 5-7 of *The Effect*
+- Milestone 03: Specify a DAG
+
+<!-- ### Week 04
 &#10;- Diagnostics and Remedies (Part 01)
 - Diagnostics and Remedies (Part 02)
 &#10;### Week 05

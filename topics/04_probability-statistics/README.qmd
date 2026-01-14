@@ -1,0 +1,68 @@
+---
+title: "Probability and Statistics"
+format: gfm
+---
+
+- Connect Bayesian inference with causality
+- Probability as a unifying framework (*The Effect* p. 19)
+- Referencing "marginal" distributions as being "unconditional" distributions (*The Effect* p. 47)
+- Connecting an interest in theoretical distributions to sampling distributions in frequentist inference (*The Effect* p. 36)
+- Connecting "the truth" conditioned on the model we've specified (*The Effect* p. 36)
+- Frequentist inference as using data to "claw our way back" to the sampling distribution (*The Effect* p. 37)
+- Focus on OLS as an economist, use the "regression" Fred Armisen meme
+
+```{python}
+import pandas as pd
+import numpy as np
+import statsmodels.formula.api as smf
+import seaborn as sns
+import seaborn.objects as so
+from causaldata import Mroz
+
+# Read in data
+dt = Mroz.load_pandas().data
+
+# Keep just working women
+dt = dt.query('lfp == True')
+
+# Create unlogged earnings
+dt = dt.assign(earn = lambda x: np.exp(x['lwg']))
+
+# 1. Draw a scatterplot 
+(so.Plot(dt, x = 'inc', y = 'earn')
+  .add(so.Dot()).scale(x = 'log', y = 'log')
+)
+```
+
+```{python}
+# 2. Get the conditional mean by college attendance
+# wc is the college variable
+dt.groupby('wc').agg({'earn': 'mean'})
+```
+
+```{python}
+# 3. Get the conditional mean by bins
+# Use cut to get 10 bins
+dt = dt.assign(inc_bin = lambda x: pd.cut(x['inc'],10))
+dt.groupby('inc_bin').agg({'earn': 'mean'})
+```
+
+```{python}
+# 4. Draw the LOESS and linear regression curves
+# Do log beforehand for these axes
+dt = dt.assign(linc = lambda x: np.log(x['inc']))
+sns.regplot(x = 'linc', y = 'lwg', data = dt, lowess = True, ci = None)
+```
+
+```{python}
+# 5. Run a linear regression, by itself and including controls
+m1 = smf.ols(formula = 'lwg ~ linc', data = dt).fit()
+print(m1.summary())
+```
+
+```{python}
+# k5 is number of kids under 5 in the house
+m2 = smf.ols(formula = 'lwg ~ linc + wc + k5', data = dt).fit()
+print(m2.summary())
+```
+
