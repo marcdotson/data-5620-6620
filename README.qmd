@@ -124,7 +124,7 @@ Please note that the instructor reserves the right to change the following sched
 
 ### Week 03
 
-- Identification and DAGs (?)
+- Identification and DAGs (Gabby)
 - Ch. 5-7 of *The Effect*
 - Milestone 03: Specify a DAG
 

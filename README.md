@@ -222,7 +222,7 @@ notice as it relates to assignment deadlines.
 
 ### Week 03
 
-- Identification and DAGs (?)
+- Identification and DAGs (Gabby)
 - Ch. 5-7 of *The Effect*
 - Milestone 03: Specify a DAG
 
