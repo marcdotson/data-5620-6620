@@ -207,6 +207,8 @@ notice as it relates to assignment deadlines.
 - Causal Inference (Marc)
 - Modeling Workflow (Marc)
 - Ch. 1-2 of *The Effect*
+- *Statistical Rethinking 2026* [Lecture A01 Introduction to Bayesian
+  Workflow](https://www.youtube.com/watch?v=ztbYkBPDOgU&t=96s)
 - Milestone 01: Brainstorm Project Ideas
 
 ### Week 02
@@ -214,6 +216,8 @@ notice as it relates to assignment deadlines.
 - Decisions and Data (Marc)
 - Probability and Statistics (Marc)
 - Ch. 3-4 of *The Effect*
+- *Statistical Rethinking 2026* [Lecture A02 Garden of Forking
+  Data](https://www.youtube.com/watch?v=pGVkCWlXnlg)
 - Milestone 02: Narrate a Data Story
 
 ### Week 03
