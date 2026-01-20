@@ -20,11 +20,9 @@ this won’t be an issue when converting these outlines into reveal.js
 slides thanks to `format: revealjs: embed-resources: true`.
 
 ``` python
-import os
 import pandas as pd
 import numpy as np
 import statsmodels.formula.api as smf
-import matplotlib.pyplot as plt
 import seaborn as sns
 import seaborn.objects as so
 from causaldata import Mroz
@@ -137,7 +135,7 @@ print(m1.summary())
     Model:                            OLS   Adj. R-squared:                  0.024
     Method:                 Least Squares   F-statistic:                     11.65
     Date:                Tue, 20 Jan 2026   Prob (F-statistic):           0.000703
-    Time:                        15:54:45   Log-Likelihood:                -461.34
+    Time:                        15:55:43   Log-Likelihood:                -461.34
     No. Observations:                 427   AIC:                             926.7
     Df Residuals:                     425   BIC:                             934.8
     Df Model:                           1                                         
@@ -169,7 +167,7 @@ print(m2.summary())
     Model:                            OLS   Adj. R-squared:                  0.064
     Method:                 Least Squares   F-statistic:                     10.67
     Date:                Tue, 20 Jan 2026   Prob (F-statistic):           8.92e-07
-    Time:                        15:54:45   Log-Likelihood:                -451.54
+    Time:                        15:55:43   Log-Likelihood:                -451.54
     No. Observations:                 427   AIC:                             911.1
     Df Residuals:                     423   BIC:                             927.3
     Df Model:                           3                                         
