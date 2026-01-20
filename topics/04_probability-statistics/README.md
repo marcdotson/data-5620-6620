@@ -13,10 +13,18 @@
   sampling distribution (*The Effect* p. 37)
 - Focus on OLS as an economist, use the “regression” Fred Armisen meme
 
+Note that it’s not possible to [specify the file path for figures
+rendered using
+Python](https://github.com/orgs/quarto-dev/discussions/12056) but that
+this won’t be an issue when converting these outlines into reveal.js
+slides thanks to `format: revealjs: embed-resources: true`.
+
 ``` python
+import os
 import pandas as pd
 import numpy as np
 import statsmodels.formula.api as smf
+import matplotlib.pyplot as plt
 import seaborn as sns
 import seaborn.objects as so
 from causaldata import Mroz
@@ -73,7 +81,7 @@ dt = dt.assign(inc_bin = lambda x: pd.cut(x['inc'],10))
 dt.groupby('inc_bin').agg({'earn': 'mean'})
 ```
 
-    /var/folders/91/9dt638d97411wn5mrksvb38h0000gp/T/ipykernel_21787/2769554712.py:4: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+    /var/folders/91/9dt638d97411wn5mrksvb38h0000gp/T/ipykernel_13837/2769554712.py:4: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
       dt.groupby('inc_bin').agg({'earn': 'mean'})
 
 <div>
@@ -128,8 +136,8 @@ print(m1.summary())
     Dep. Variable:                    lwg   R-squared:                       0.027
     Model:                            OLS   Adj. R-squared:                  0.024
     Method:                 Least Squares   F-statistic:                     11.65
-    Date:                Wed, 14 Jan 2026   Prob (F-statistic):           0.000703
-    Time:                        11:05:34   Log-Likelihood:                -461.34
+    Date:                Tue, 20 Jan 2026   Prob (F-statistic):           0.000703
+    Time:                        15:54:45   Log-Likelihood:                -461.34
     No. Observations:                 427   AIC:                             926.7
     Df Residuals:                     425   BIC:                             934.8
     Df Model:                           1                                         
@@ -160,8 +168,8 @@ print(m2.summary())
     Dep. Variable:                    lwg   R-squared:                       0.070
     Model:                            OLS   Adj. R-squared:                  0.064
     Method:                 Least Squares   F-statistic:                     10.67
-    Date:                Wed, 14 Jan 2026   Prob (F-statistic):           8.92e-07
-    Time:                        11:05:34   Log-Likelihood:                -451.54
+    Date:                Tue, 20 Jan 2026   Prob (F-statistic):           8.92e-07
+    Time:                        15:54:45   Log-Likelihood:                -451.54
     No. Observations:                 427   AIC:                             911.1
     Df Residuals:                     423   BIC:                             927.3
     Df Model:                           3                                         

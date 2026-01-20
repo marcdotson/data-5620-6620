@@ -1,6 +1,8 @@
 ---
 title: "Probability and Statistics"
-format: gfm
+format: 
+  gfm:
+    cache: false
 ---
 
 - Connect Bayesian inference with causality
@@ -11,10 +13,14 @@ format: gfm
 - Frequentist inference as using data to "claw our way back" to the sampling distribution (*The Effect* p. 37)
 - Focus on OLS as an economist, use the "regression" Fred Armisen meme
 
+Note that it's not possible to [specify the file path for figures rendered using Python](https://github.com/orgs/quarto-dev/discussions/12056) but that this won't be an issue when converting these outlines into reveal.js slides thanks to `format: revealjs: embed-resources: true`.
+
 ```{python}
+import os
 import pandas as pd
 import numpy as np
 import statsmodels.formula.api as smf
+import matplotlib.pyplot as plt
 import seaborn as sns
 import seaborn.objects as so
 from causaldata import Mroz
