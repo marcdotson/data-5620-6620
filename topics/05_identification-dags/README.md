@@ -36,5 +36,5 @@
 - Formal description of the arrow of time and the need for an acylcic
   graph (*The Effect* p. 110)
 
-<img src="../../figures/meme_uncertainty.png" style="width:90.0%"
+<img src="../../figures/meme_uncertainty.png" style="width:50.0%"
 data-fig-align="center" />

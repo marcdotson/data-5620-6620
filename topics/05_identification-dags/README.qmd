@@ -19,5 +19,5 @@ format: gfm
 - Simplify the DGP/DAG by removing variables with tiny and unimportant effects, that are redundant/can be combined with other variables, mediators, or not relevant to identifying the causal effect (*The Effect* p. 107-108)
 - Formal description of the arrow of time and the need for an acylcic graph (*The Effect* p. 110)
 
-![](../../figures/meme_uncertainty.png){width=90% fig-align="center"}
+![](../../figures/meme_uncertainty.png){width=50% fig-align="center"}
 
