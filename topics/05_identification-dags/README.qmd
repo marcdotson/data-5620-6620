@@ -1,0 +1,23 @@
+---
+title: "Identification and DAGs"
+format: gfm
+---
+
+- Reference to DGPs in physical vs. social science (*The Effect* p. 68)
+- Excellent description of the place for simulating data (*The Effect* p. 69)
+- Using simulated data to demonstrate the need for an identification strategy via knowledge about the DGP (e.g., omitted variable bias) (*The Effect* p. 69)
+- Identification as isolating the causal estimand (*The Effect* p. 77)
+- "This observation has *identified* an answer to our question, simply by closing off every other possible explanation." (*The Effect* p. 77)
+- This is the benefit of *random* experiments, where randomization closes off every other possible explanation for us -- the ones we know about and the ones we don't
+- "We need to make a claim about what we *already know* in order to have any hopes of learning something new" (*The Effect* p. 78)
+- Understanding (or assuming) a DGP is necessary to identify the causal estimand of interest, but it's also needed for parametric modeling generally
+- Even for non-causal questions, there is often a causal question *lurking* underneath (*The Effect* p. 88)
+- Causality is about *intervention*, it has *direction* and thus implies a temporal order, but it's about changing the probability of something occuring---its not deterministic (*The Effect* p. 89)
+- We have both direct and indirect causal effects (*The Effect* p. 96, 98)
+- All models are built on assumptions, and a DAG makes them explicit, particulary the identifying assumptions (*The Effect* p. 97)
+- The causal estimand, the variable of interest, that's the treatment variable (note the language of experiments) (*The Effect* p. 102)
+- Simplify the DGP/DAG by removing variables with tiny and unimportant effects, that are redundant/can be combined with other variables, mediators, or not relevant to identifying the causal effect (*The Effect* p. 107-108)
+- Formal description of the arrow of time and the need for an acylcic graph (*The Effect* p. 110)
+
+![](../../figures/meme_uncertainty.png){width=90% fig-align="center"}
+
