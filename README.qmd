@@ -131,7 +131,7 @@ Please note that the instructor reserves the right to change the following sched
 
 ### Week 04
 
-- Controls and Causal Paths (?)
+- Controls and Causal Paths (Tate)
 - Sports and Marketing Analytics Presentation
 - Ch. 8-9 of *The Effect*
 - *Statistical Rethinking 2023* [Elemental Confounds](https://www.youtube.com/watch?v=mBEA7PKDmiY&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=6) and [Good and Bad Controls](https://www.youtube.com/watch?v=uanZZLlzKHw&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=7)

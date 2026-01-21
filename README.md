@@ -230,7 +230,7 @@ notice as it relates to assignment deadlines.
 
 ### Week 04
 
-- Controls and Causal Paths (?)
+- Controls and Causal Paths (Tate)
 - Sports and Marketing Analytics Presentation
 - Ch. 8-9 of *The Effect*
 - *Statistical Rethinking 2023* [Elemental
