@@ -224,20 +224,38 @@ notice as it relates to assignment deadlines.
 
 - Identification and DAGs (Gabby)
 - Ch. 5-7 of *The Effect*
+- *Statistical Rethinking 2026* [Lecture A03 Geocentric
+  Models](https://www.youtube.com/watch?v=JX_UyidsQNg)
 - Milestone 03: Specify a DAG
 
-<!-- ### Week 04
-&#10;- Diagnostics and Remedies (Part 01)
-- Diagnostics and Remedies (Part 02)
-&#10;### Week 05
-&#10;- Feature Engineering and Ordinary Least Squares
-- Frequentist and Bayesian Inference
-&#10;### Week 06
-&#10;- Model Evaluation and Prediction
-- Communicating Results
-&#10;### Week 07
-&#10;- Presentations
-&#10;### Week 08
+### Week 04
+
+- Controls and Causal Paths (?)
+- Potential Outcomes (?)
+- Ch. 8-11 of *The Effect*
+- *Statistical Rethinking 2023* [Elemental
+  Confounds](https://www.youtube.com/watch?v=mBEA7PKDmiY&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=6)
+  and [Good and Bad
+  Controls](https://www.youtube.com/watch?v=uanZZLlzKHw&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=7)
+- Milestone 04: Specify an Identification Strategy
+
+### Week 05
+
+- Experimental Control (Marc)
+- Discrete Choice Analysis (Aleks)
+- Milestone 05: Run a Conjoint Experiment
+
+### Week 06
+
+- Multilevel Models (Marc)
+- Introduction to PyMC (?)
+- Milestone 06: Prepare a Presentation
+
+### Week 07
+
+- Presentations
+
+<!-- ### Week 08
 &#10;- Asymmetric Loss
 - Generalized Linear Models
 &#10;### Week 09
