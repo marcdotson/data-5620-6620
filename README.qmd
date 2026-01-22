@@ -154,15 +154,15 @@ Please note that the instructor reserves the right to change the following sched
 
 - Presentations
 
-<!-- ### Week 08
+### Week 08
 
-- Asymmetric Loss
-- Generalized Linear Models
+- Regression (?)
+- Ch. 12-13 of *The Effect*
 
 ### Week 09
 
-- Logistic Regression
-- Maximum Likelihood Estimation
+- Matching (?)
+- Ch. 14 of *The Effect*
 
 ### Week 10
 
@@ -170,26 +170,25 @@ Please note that the instructor reserves the right to change the following sched
 
 ### Week 11
 
-- Hyperparameters
-- Confusion and Cross-Validation
+- Simulation (?)
+- Ch. 15 of *The Effect*
 
 ### Week 12
 
-- Penalized Regression
-- Ridge Regression, LASSO, and Elastic Net
+- Fixed Effects (?)
+- Ch. 16 of *The Effect*
 
 ### Week 13
 
-- Dimensionality Reduction
-- Principal Component Regression
+- Event Studies (?)
+- Ch. 17 of *The Effect*
 
 ### Week 14
 
-- Interactions
-- Multilevel Models
+- Difference-in-Differences (?)
+- Ch. 18 of *The Effect*
 
 ### Week 15
 
 - Presentations
-- Regression and Other Stories -->
 

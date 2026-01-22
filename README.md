@@ -256,26 +256,40 @@ notice as it relates to assignment deadlines.
 
 - Presentations
 
-<!-- ### Week 08
-&#10;- Asymmetric Loss
-- Generalized Linear Models
-&#10;### Week 09
-&#10;- Logistic Regression
-- Maximum Likelihood Estimation
-&#10;### Week 10
-&#10;- Spring Break
-&#10;### Week 11
-&#10;- Hyperparameters
-- Confusion and Cross-Validation
-&#10;### Week 12
-&#10;- Penalized Regression
-- Ridge Regression, LASSO, and Elastic Net
-&#10;### Week 13
-&#10;- Dimensionality Reduction
-- Principal Component Regression
-&#10;### Week 14
-&#10;- Interactions
-- Multilevel Models
-&#10;### Week 15
-&#10;- Presentations
-- Regression and Other Stories -->
+### Week 08
+
+- Regression (?)
+- Ch. 12-13 of *The Effect*
+
+### Week 09
+
+- Matching (?)
+- Ch. 14 of *The Effect*
+
+### Week 10
+
+- Spring Break
+
+### Week 11
+
+- Simulation (?)
+- Ch. 15 of *The Effect*
+
+### Week 12
+
+- Fixed Effects (?)
+- Ch. 16 of *The Effect*
+
+### Week 13
+
+- Event Studies (?)
+- Ch. 17 of *The Effect*
+
+### Week 14
+
+- Difference-in-Differences (?)
+- Ch. 18 of *The Effect*
+
+### Week 15
+
+- Presentations
