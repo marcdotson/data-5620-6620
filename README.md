@@ -230,9 +230,9 @@ notice as it relates to assignment deadlines.
 
 ### Week 04
 
-- Controls and Causal Paths (Tate)
+- Causal Paths and Controls (Tate)
 - Sports and Marketing Analytics Presentation
-- Ch. 8-9 of *The Effect*
+- Ch. 8 of *The Effect*
 - *Statistical Rethinking 2023* [Elemental
   Confounds](https://www.youtube.com/watch?v=mBEA7PKDmiY&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=6)
   and [Good and Bad
@@ -243,7 +243,7 @@ notice as it relates to assignment deadlines.
 
 - Potential Outcomes and Experimental Control (Marc)
 - Discrete Choice Analysis (Aleks)
-- Ch. 10-11 of *The Effect*
+- Ch. 9-11 of *The Effect*
 - Milestone 05: Run a Conjoint Experiment
 
 ### Week 06
