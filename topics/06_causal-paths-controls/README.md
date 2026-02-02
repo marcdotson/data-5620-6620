@@ -9,11 +9,3 @@
 - The set of variables to control for is called the adjustment set or
   identification strategy
 - Including colliders is where we get *included variable bias*
-- Instead of trying to close back doors, we can find ways of isolating
-  just front doors (i.e., direct, indirect, and total effects) (*The
-  Effect* p. 130)
-- Experimental control cuts the associations that would create back door
-  paths (*The Effect* p. 131)
-- “\[W\]e’re just replacing the difficulty of finding and closing all
-  back doors for a treatment variable with the difficulty of finding and
-  closing all back doors for something else” (*The Effect* p. 139)

@@ -1,0 +1,31 @@
+# Potential Outcomes and Experimental Control
+
+
+- Instead of trying to close back doors, we can find ways of isolating
+  just front doors (i.e., direct, indirect, and total effects) (*The
+  Effect* p. 130)
+- Experimental control cuts the associations that would create back door
+  paths (*The Effect* p. 131)
+- “\[W\]e’re just replacing the difficulty of finding and closing all
+  back doors for a treatment variable with the difficulty of finding and
+  closing all back doors for something else” (*The Effect* p. 139)
+- Just like experimental control is the gold standard, being able to
+  estimate **heterogeneous treatment effects** is the gold standard
+  (*The Effect* p. 144)
+- If we aren’t getting at heterogeneous treatment effects, we are
+  getting at an *average*
+- Fake data is an illustration of potential outcomes with $Y^0$ and
+  $Y^1$ and the **fundamental problem of causal inference** (*The
+  Effect* p. 146)
+- **Conditional average treatment effect:** ATE conditioned on some
+  variable (*The Effect* p. 147)
+- **Average treament effect on the treated:** ATE conditioned on
+  receiving the treatment (*The Effect* p. 147)
+- **Average treatment effect on the untreated:** ATE conditioned on not
+  receiving the treatment (*The Effect* p. 147)
+- Weighted average treatment effects are a kind of post-stratified ATE
+- “The treatment effect you get isn’t necessarily a choice you make.
+  It’s a consequence of the research design you have.” (*The Effect*
+  p. 154)
+- Identify the type of treatment effect you want based on what the
+  intervention might look like (*The Effect* p. 159)
