@@ -242,7 +242,7 @@ notice as it relates to assignment deadlines.
 ### Week 05
 
 - Potential Outcomes and Experimental Control (Marc)
-- Discrete Choice Analysis (Aleks)
+- Discrete Choice Modeling (Aleks)
 - Ch. 9-11 of *The Effect*
 - Milestone 05: Run a Conjoint Experiment
 

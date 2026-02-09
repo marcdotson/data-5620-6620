@@ -140,14 +140,14 @@ Please note that the instructor reserves the right to change the following sched
 ### Week 05
 
 - Potential Outcomes and Experimental Control (Marc)
-- Discrete Choice Analysis (Aleks)
+- Discrete Choice Modeling (Aleks)
 - Ch. 9-11 of *The Effect*
 - Milestone 05: Run a Conjoint Experiment
 
 ### Week 06
 
+- Frequentist (Marc)
 - Multilevel Models (Marc)
-- Introduction to PyMC (?)
 - Milestone 06: Prepare a Presentation
 
 ### Week 07
