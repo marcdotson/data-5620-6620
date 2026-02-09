@@ -1,0 +1,7 @@
+---
+title: "Discrete Choice Modeling"
+format: gfm
+---
+
+- See Aleks' slides.
+

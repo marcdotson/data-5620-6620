@@ -1,0 +1,6 @@
+---
+title: "Frequentist and Bayesian Inference"
+format: gfm
+---
+
+- 
