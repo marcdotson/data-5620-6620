@@ -237,6 +237,8 @@ notice as it relates to assignment deadlines.
   Confounds](https://www.youtube.com/watch?v=mBEA7PKDmiY&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=6)
   and [Good and Bad
   Controls](https://www.youtube.com/watch?v=uanZZLlzKHw&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=7)
+- *Statistical Rethinking 2026* [Lecture A04 Categories and
+  Causes](https://www.youtube.com/watch?v=GIdwLrW2nNo&t=1s)
 - Milestone 04: Specify an Identification Strategy
 
 ### Week 05
@@ -248,8 +250,10 @@ notice as it relates to assignment deadlines.
 
 ### Week 06
 
+- Frequentist and Bayesian Inference (Marc)
 - Multilevel Models (Marc)
-- Introduction to PyMC (?)
+- *Statistical Rethinking 2026* [Lecture B01 Multilevel
+  Models](https://www.youtube.com/watch?v=jh3RltVrQ-Q&t=1s)
 - Milestone 06: Prepare a Presentation
 
 ### Week 07

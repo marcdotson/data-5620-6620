@@ -135,6 +135,7 @@ Please note that the instructor reserves the right to change the following sched
 - Sports and Marketing Analytics Presentation
 - Ch. 8 of *The Effect*
 - *Statistical Rethinking 2023* [Elemental Confounds](https://www.youtube.com/watch?v=mBEA7PKDmiY&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=6) and [Good and Bad Controls](https://www.youtube.com/watch?v=uanZZLlzKHw&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=7)
+- *Statistical Rethinking 2026* [Lecture A04 Categories and Causes](https://www.youtube.com/watch?v=GIdwLrW2nNo&t=1s)
 - Milestone 04: Specify an Identification Strategy
 
 ### Week 05
@@ -146,8 +147,9 @@ Please note that the instructor reserves the right to change the following sched
 
 ### Week 06
 
-- Frequentist (Marc)
+- Frequentist and Bayesian Inference (Marc)
 - Multilevel Models (Marc)
+- *Statistical Rethinking 2026* [Lecture B01 Multilevel Models](https://www.youtube.com/watch?v=jh3RltVrQ-Q&t=1s)
 - Milestone 06: Prepare a Presentation
 
 ### Week 07
