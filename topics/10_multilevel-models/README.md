@@ -1,4 +1,10 @@
-# Frequentist and Bayesian Inference
+# Multilevel Models
 
 
-- 
+- Used “Surveys, Conjoint, and Multilevel Models” presentation from
+  `causal-inference` as a review up to Multilevel Models.
+- Used “Multilevel Models” presentation from DATA 5600 up to
+  Decision-Making Under Uncertainty.
+- Used “Why Donors Donate” presentation from Sawtooth Software’s
+  Analytics and Insight Summit up to and including Average Marginal
+  Component Effects (AMCEs).
