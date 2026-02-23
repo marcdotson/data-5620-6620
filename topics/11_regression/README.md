@@ -1,0 +1,11 @@
+# Causal Paths and Controls
+
+
+- Paths are alternate explanations, ignoring the arrows of causality
+  (*The Effect* p. 116)
+- “\[E\]ach of those paths contains a story” (*The Effect* p. 120)
+- All front door paths being “good” says we’re interested in the *total*
+  rather than direct effect (*The Effect* p. 121)
+- The set of variables to control for is called the adjustment set or
+  identification strategy
+- Including colliders is where we get *included variable bias*
