@@ -262,12 +262,12 @@ notice as it relates to assignment deadlines.
 
 ### Week 08
 
-- Regression (?)
+- Regression (Luke and Seth)
 - Ch. 12-13 of *The Effect*
 
 ### Week 09
 
-- Matching (?)
+- Matching (Gabby)
 - Ch. 14 of *The Effect*
 
 ### Week 10
