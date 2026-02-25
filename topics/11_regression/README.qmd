@@ -15,6 +15,8 @@ format: gfm
 - Note on including predictors outside the adjustment set (*The Effect* p. 198)
 
 ```{python}
+#| eval: false
+
 import os
 import pandas as pd
 import statsmodels.formula.api as smf
@@ -42,4 +44,10 @@ regtable = Stargazer([m1, m2])
 f.write(regtable.render_html())
 f.close()
 ```
+
+- We can either add polynomial terms or transform the data (*The Effect* p. 206)
+- Polynomial terms can make interpretation harder but can also lead to overfitting (*The Effect* p. 209)
+- Omitting a variable from the model if it's not signficant *makes* it zero, which may not be right (*The Effect* p. 211)
+- Skewed data are likely to produce outliers (*The Effect* p. 212)
+- ...and then a ton of very econometric/frequentist heavy advice about dealing with standard errors (see the "regression" Fred Armisen meme)
 
