@@ -1,0 +1,61 @@
+# Regression
+
+
+- Quasiexperimental (i.e., reduced form) methods are also referred to as
+  “templates” (*The Effect* p. 176)
+- These methods don’t let us get away from using a causal diagram to
+  draw our DGP (*The Effect* p. 176)
+- Including predictors to “control” for them in a regression is cleary
+  borrowing experimental design language (*The Effect* p. 179)
+- The “true model” is a reference to the idea of a “true DGP” (*The
+  Effect* p. 180)
+- The difference between residuals and errors similarly reference the
+  idea of a “true model” (*The Effect* p. 182)
+- The *exogeneity assumption* is restating the conditions for
+  identifying a causal effect (*The Effect* p. 183)
+- Connection between an endogeneity problem and Validity or the *omitted
+  variable bias* (*The Effect* p. 184)
+- The connection between OLS and hypothesis testing clearly demonstrates
+  the need for Statistical Rethinking (*The Effect* p. 186)
+- Caution about statistical significance (*The Effect* p. 190)
+- Note on including predictors outside the adjustment set (*The Effect*
+  p. 198)
+
+``` python
+import os
+import pandas as pd
+import statsmodels.formula.api as smf
+from stargazer.stargazer import Stargazer
+from causaldata import restaurant_inspections
+
+res = restaurant_inspections.load_pandas().data
+
+# Perform the first, one-predictor regression
+# use the sm.ols() function, with ~ telling us what 
+# the dependent variable varies over
+m1 = smf.ols(formula = 'inspection_score ~ NumberofLocations', 
+  data = res).fit()
+
+# Now add year as a control
+# Just use + to add more terms to the regression
+m2 = smf.ols(formula = 'inspection_score ~ NumberofLocations + Year', 
+  data = res).fit()
+
+# Open a file to write to
+f = open(os.path.join('topics', '11_regression', 'regression_table.html'), 'w')
+# Give Stargazer a list of the models we want
+# in our table and save to file
+regtable = Stargazer([m1, m2])
+f.write(regtable.render_html())
+f.close()
+```
+
+- We can either add polynomial terms or transform the data (*The Effect*
+  p. 206)
+- Polynomial terms can make interpretation harder but can also lead to
+  overfitting (*The Effect* p. 209)
+- Omitting a variable from the model if it’s not signficant *makes* it
+  zero, which may not be right (*The Effect* p. 211)
+- Skewed data are likely to produce outliers (*The Effect* p. 212)
+- …and then a ton of very econometric/frequentist heavy advice about
+  dealing with standard errors (see the “regression” Fred Armisen meme)
