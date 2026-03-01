@@ -267,7 +267,7 @@ notice as it relates to assignment deadlines.
 
 ### Week 09
 
-- Matching (Gabby)
+- Matching (Gabby and Tate)
 - Ch. 14 of *The Effect*
 
 ### Week 10
