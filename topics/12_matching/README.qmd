@@ -3,5 +3,61 @@ title: "Matching"
 format: gfm
 ---
 
-- ... (*The Effect* p. 176)
+- ... 
+- Note on using inverse probability weights instead of propensity scores for matching (*The Effect* p. 300)
+- Even though we're trying to predict the propensity score, we want to think about a causal diagram still since we're trying to close backdoor paths (*The Effect* p. 300)
+
+```{python}
+import pandas as pd
+import numpy as np
+import statsmodels.formula.api as sm
+# The more-popular matching tools in sklearn
+# are more geared towards machine learning than statistical inference
+from causalinference.causal import CausalModel
+from causaldata import black_politicians
+br = black_politicians.load_pandas().data
+
+# Get our outcome, treatment, and matching variables as numpy arrays
+Y = br['responded'].to_numpy()
+D = br['leg_black'].to_numpy()
+X = br[['medianhhincom', 'blackpercent', 'leg_democrat']].to_numpy()
+
+# Set up our model
+M = CausalModel(Y, D, X)
+
+# Estimate the propensity score using logit
+M.est_propensity()
+
+# Trim the score with improved algorithm trim_s to improve balance
+M.trim_s()
+
+# If we want to use the scores elsewhere, export them
+# (we could have also done this with sm.Logit)
+br['ps'] = M.propensity['fitted']
+
+# We can estimate the effect directly (note this uses "doubly robust" methods
+# as will be later described, which is why it doesn't match the sm.wls result)
+M.est_via_weighting()
+
+print(M.estimates)
+
+# Or we can do our own weighting
+br = br.assign(ipw = lambda x: x.leg_black*(1/x.ps) + (1-x.leg_black)*(1/(1-x.ps)))
+
+# Now, use the weights to estimate the effect (this will produce 
+# incorrect standard errors unless we bootstrap the whole process,
+# as in the doubly robust section later, or the Simulation chapter)
+m = sm.wls(formula = 'responded ~ leg_black',
+weights = br['ipw'],data = br).fit()
+
+m.summary()
+```
+
+- If omitted variable bias is equivalent to "open back doors" then conditional independence is equivalent to "all the back doors are closed" (*The Effect* p. 304)
+- "The assumption of common support says that there must be *substantial* overlap in the distributions of the matching variables comapring the treated and control observations. Or in the context of propensity scores, there must be substantial overlap in the distribution of the propensity score." (*The Effect* p. 306)
+- We assume that the true propensity score is never exactly 0 or 1 to avoid dividing by 0 when weighting (*The Effect* p. 307)
+- We can "trim" the propensity score and limit the data to the range of common support (*The Effect* p. 308)
+- "Matching relies on the existence of comparable observations" (*The Effect* p. 309)
+- Trying to achieve balance in the comparable groups is akin to balance requirements for an experimental design
+- Again, we run into a problem of getting standard errors or confidence intervals and the need to use Bayes or bootstrap methods (*The Effect* p. 316)
 
