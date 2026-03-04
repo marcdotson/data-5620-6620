@@ -276,24 +276,30 @@ notice as it relates to assignment deadlines.
 
 ### Week 11
 
-- Simulation (?)
-- Ch. 15 of *The Effect*
+- Simulation (Aleks)
+- Fixed Effects (Luke)
+- Ch. 15-16 of *The Effect*
 
 ### Week 12
 
-- Fixed Effects (?)
-- Ch. 16 of *The Effect*
+- Event Studies (Gabby)
+- Difference-in-Differences (Seth)
+- Ch. 17-18 of *The Effect*
 
 ### Week 13
 
-- Event Studies (?)
-- Ch. 17 of *The Effect*
+- Instrumental Variables (Aleks)
+- Regression Discontinuity (Tate)
+- Ch. 19-20 of *The Effect*
 
 ### Week 14
 
-- Difference-in-Differences (?)
-- Ch. 18 of *The Effect*
+- Partial Identification (Luke)
+- A Gallery of Rogues: Other Methods (Seth)
+- Ch. 21-22 of *The Effect*
 
 ### Week 15
 
+- Under the Rug (Marc)
 - Presentations
+- Ch. 23 of *The Effect*
