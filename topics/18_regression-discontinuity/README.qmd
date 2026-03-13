@@ -1,0 +1,7 @@
+---
+title: "Topic"
+format: gfm
+---
+
+- ... (*The Effect* p. 300)
+
