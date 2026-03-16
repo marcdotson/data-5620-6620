@@ -1,0 +1,22 @@
+# Simulation
+
+
+- Simulation in place of mathematical proofs (*The Effect* p. 330)
+- Repeated random sampling to produce a frequentist interval estimate, a
+  kind of simulation-based bootstrap confidence interval (*The Effect*
+  p. 331)
+- Repeated random sampling to make sure a given simulation “isn’t a
+  fluke” in the flavor or simulation-based calibration (*The Effect*
+  p. 347)
+- All of these simulations are **Monte Carlo simulations**
+- Sampling distributions are the theoretical distributions of an
+  estimator
+- Simulations formalize a DAG, help us consider what the ideal data
+  would be, and allow us to check our code via parameter recovery
+- Simulation is great for: 1. trying out new estimators, 2. comparing
+  estimators, and 3. seeing how to break an estimator (*The Effect*
+  p. 351)
+- Characterizing a bootstrap as a simulation using actual data (*The
+  Effect* p. 373)
+- The “Bayesian” bootstrap is only Bayesian in that it tries to
+  incorporate weights as priors (*The Effect* p. 379)
