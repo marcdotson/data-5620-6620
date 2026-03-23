@@ -282,8 +282,8 @@ notice as it relates to assignment deadlines.
 
 ### Week 12
 
-- Event Studies (Gabby)
-- Difference-in-Differences (Seth)
+- Event Studies (Seth)
+- Difference-in-Differences (Gabby)
 - Ch. 17-18 of *The Effect*
 
 ### Week 13
