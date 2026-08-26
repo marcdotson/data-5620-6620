@@ -2,9 +2,8 @@
 
 # DATA 5620/6620 Advanced Regression for Causal Inference
 
-- Class: Monday and Wednesday 12:00-1:15 pm, HH 370
-- Office Hours: Tuesdays and Thursdays 3-5 pm, GLLB 204 or
-  [Zoom](https://usu-edu.zoom.us/j/9087876841?pwd=4Nl9sQnSAk3lXfwblJQduriCrzDYok.1)
+<!-- - Class: Monday and Wednesday 12:00-1:15 pm, HH 370
+- Office Hours: Tuesdays and Thursdays 3-5 pm, GLLB 204 or [Zoom](https://usu-edu.zoom.us/j/9087876841?pwd=4Nl9sQnSAk3lXfwblJQduriCrzDYok.1) -->
 
 This course focuses on the application of regression to inform
 decision-making, particularly using interpretable models to understand
@@ -55,20 +54,8 @@ Machine Learning for Analytics and DATA 5630 Deep Forecasting.
 ## Data Stack
 
 Each student will need to bring a laptop, either their own or one rented
-from Utah State. While students are welcome to use their preferred
-tools, the following [data
-stack](https://github.com/marcdotson/data-stack) is recommended and
-certain tools are required, as indicated below.
-
-### Python
-
-[Python](https://en.wikipedia.org/wiki/Python_(programming_language)) is
-a general purpose, open source programming language developed by
-computer scientists. It is the most commonly used programming language
-for data wrangling, visualizations, and modeling. See the [data stack
-training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-python)
-for details on how to best install and manage Python versions and
-project environments.
+from Utah State, and use the following [data
+stack](https://github.com/marcdotson/data-stack).
 
 ### Positron
 
@@ -83,6 +70,28 @@ with essential data tools common to language-specific IDEs. See the
 training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-positron)
 for a summary of Positron’s data-friendly features.
 
+### Python
+
+[Python](https://en.wikipedia.org/wiki/Python_(programming_language)) is
+a general purpose, open source programming language developed by
+computer scientists. It is the most commonly used programming language
+for data wrangling, visualizations, and modeling. Students will be
+evaluated on their ability to use and adapt the code provided as part of
+the course. See the [data stack
+training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-python)
+for how to install and manage Python versions and project environments.
+
+### Quarto
+
+[Quarto](https://quarto.org) is an open source publishing system that
+combines text, code, and output. Quarto documents are similar to Jupyter
+notebooks, except the content can be rendered into a variety of formats,
+including PDFs, Word documents, PowerPoint presentations, Revealjs slide
+decks, interactive dashboards, websites, etc. Students will be required
+to submit code and output in Quarto and PDF formats. See the [data stack
+training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-quarto)
+for more details on Quarto.
+
 ### GitHub
 
 [GitHub](https://github.com/about) is an online hosting service for
@@ -93,22 +102,10 @@ collaboration on a single code base and enables students to organize an
 online portfolio of work. See the [data stack
 training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-github)
 for the basics of using Git and GitHub and a [project
-template](https://github.com/marcdotson/project-template).
+template](https://github.com/marcdotson/project-template) for the course
+projects.
 
-### Quarto
-
-[Quarto](https://quarto.org) is an open source publishing system that
-combines text, code, and output. Quarto documents are similar to Jupyter
-notebooks, except the content can be rendered into a variety of formats,
-including PDFs, Word documents, PowerPoint presentations, Revealjs slide
-decks, interactive dashboards, websites, etc. While Quarto is not
-required for the course, students will be required to submit code and
-output in a PDF format. See the [data stack
-training](https://github.com/marcdotson/data-stack?tab=readme-ov-file#sec-quarto)
-for more details on Quarto, including how to use Quarto to render a
-Jupyter notebook into a PDF.
-
-### Copilot
+### AI
 
 Students may use their preferred AI to assist in studying and completing
 assignments. All students have access to
@@ -131,13 +128,6 @@ Causality*](https://theeffectbook.net/index.html) (available free
 online). He also has a [video
 series](https://nickchk.com/theeffectvideos.html) that complements the
 book.
-
-## *Program Evaluation for Public Service*
-
-We will be referencing Andrew Heiss’ [Program Evaluation for Public
-Service](https://evalsp25.classes.andrewheiss.com) course, which also
-includes a [video
-series](https://www.youtube.com/playlist?list=PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC).
 
 ## *Statistical Rethinking*
 
@@ -171,17 +161,6 @@ they can’t contribute. Students will take turns preparing slides and
 presenting to lead the discussion in class. When relevant, students
 should include relevant code when leading the discussion.
 
-### Interviews (30%)
-
-Interviews are an opportunity for students to demonstrate their personal
-understanding and prepare for future real-world job interviews. Designed
-to complement group project work, interviews will include questions
-about course concepts, project work (including code), and reflections on
-performance in the course.
-
-Interviews with the instructor will occur at the beginning, middle, and
-end of the semester during office hours or by appointment.
-
 ### Projects (50%)
 
 Projects are the focus of learning by doing in the course, serving as
@@ -196,6 +175,17 @@ slides to get feedback and have time for revision. The other students in
 the class, as well as the group members themselves, will help evaluate
 each of the presentations.
 
+### Interviews (30%)
+
+Interviews are an opportunity for students to demonstrate their personal
+understanding and prepare for future real-world job interviews. Designed
+to complement group project work, interviews will include questions
+about course concepts, project work (including code), and reflections on
+performance in the course.
+
+Interviews with the instructor will occur at the beginning, middle, and
+end of the semester during office hours or by appointment.
+
 ## Schedule
 
 Please note that the instructor reserves the right to change the
@@ -204,8 +194,8 @@ notice as it relates to assignment deadlines.
 
 ### Week 01
 
-- Causal Inference (Marc)
-- Modeling Workflow (Marc)
+- Causal Inference
+- Modeling Workflow
 - Ch. 1-2 of *The Effect*
 - *Statistical Rethinking 2026* [Lecture A01 Introduction to Bayesian
   Workflow](https://www.youtube.com/watch?v=ztbYkBPDOgU&t=96s)
@@ -213,8 +203,8 @@ notice as it relates to assignment deadlines.
 
 ### Week 02
 
-- Decisions and Data (Marc)
-- Probability and Statistics (Marc)
+- Decisions and Data
+- Probability and Statistics
 - Ch. 3-4 of *The Effect*
 - *Statistical Rethinking 2026* [Lecture A02 Garden of Forking
   Data](https://www.youtube.com/watch?v=pGVkCWlXnlg)
@@ -222,7 +212,7 @@ notice as it relates to assignment deadlines.
 
 ### Week 03
 
-- Identification and DAGs (Gabby)
+- Identification and DAGs
 - Ch. 5-7 of *The Effect*
 - *Statistical Rethinking 2026* [Lecture A03 Geocentric
   Models](https://www.youtube.com/watch?v=JX_UyidsQNg)
@@ -230,8 +220,7 @@ notice as it relates to assignment deadlines.
 
 ### Week 04
 
-- Causal Paths and Controls (Tate)
-- Sports and Marketing Analytics Presentation
+- Causal Paths and Controls
 - Ch. 8 of *The Effect*
 - *Statistical Rethinking 2023* [Elemental
   Confounds](https://www.youtube.com/watch?v=mBEA7PKDmiY&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=6)
@@ -243,15 +232,15 @@ notice as it relates to assignment deadlines.
 
 ### Week 05
 
-- Potential Outcomes and Experimental Control (Marc)
-- Discrete Choice Modeling (Aleks)
+- Potential Outcomes and Experimental Control
+- Discrete Choice Modeling
 - Ch. 9-11 of *The Effect*
 - Milestone 05: Run a Conjoint Experiment
 
 ### Week 06
 
-- Frequentist and Bayesian Inference (Marc)
-- Multilevel Models (Marc)
+- Frequentist and Bayesian Inference
+- Multilevel Models
 - *Statistical Rethinking 2026* [Lecture B01 Multilevel
   Models](https://www.youtube.com/watch?v=jh3RltVrQ-Q&t=1s)
 - Milestone 06: Prepare a Presentation
@@ -262,44 +251,47 @@ notice as it relates to assignment deadlines.
 
 ### Week 08
 
-- Regression (Luke and Seth)
+- Regression
 - Ch. 12-13 of *The Effect*
 
 ### Week 09
 
-- Matching (Gabby and Tate)
+- Matching
 - Ch. 14 of *The Effect*
+
+<!-- ### Week 10
+&#10;- Spring Break -->
 
 ### Week 10
 
-- Spring Break
+- Simulation
+- Fixed Effects
+- Ch. 15-16 of *The Effect*
 
 ### Week 11
 
-- Simulation (Aleks)
-- Fixed Effects (Luke)
-- Ch. 15-16 of *The Effect*
+- Event Studies
+- Difference-in-Differences
+- Ch. 17-18 of *The Effect*
 
 ### Week 12
 
-- Event Studies (Seth)
-- Difference-in-Differences (Gabby)
-- Ch. 17-18 of *The Effect*
+- Instrumental Variables
+- Regression Discontinuity
+- Ch. 19-20 of *The Effect*
 
 ### Week 13
 
-- Instrumental Variables (Aleks)
-- Regression Discontinuity (Tate)
-- Ch. 19-20 of *The Effect*
+- Thanksgiving Break
 
 ### Week 14
 
-- Partial Identification (Luke)
-- A Gallery of Rogues: Other Methods (Seth)
+- Partial Identification
+- A Gallery of Rogues: Other Methods
 - Ch. 21-22 of *The Effect*
 
 ### Week 15
 
-- Under the Rug (Marc)
+- Under the Rug
 - Presentations
 - Ch. 23 of *The Effect*
